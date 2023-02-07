@@ -16,8 +16,8 @@ function FormElem({ addContact }) {
   const handleSubmit = (values, { resetForm }) => {
     const newContact = {
       id: nanoid(),
-      name: values.name.trim(),
-      number: values.number.trim(),
+      name: values.name,
+      number: values.number,
     };
    
     addContact(newContact);
