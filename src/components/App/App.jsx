@@ -53,8 +53,6 @@ class App extends Component {
         <Title>Contacts</Title>
         <Filter value={filter} onInput={this.onFilterInput} />
         <Contacts
-          contacts={contacts}
-          filter={filter}
           filteredContacts={this.filteredContacts}
           deleteContact={this.deleteContact}
         />
